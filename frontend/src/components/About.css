@@ -1,0 +1,137 @@
+.about {
+  background: linear-gradient(180deg, #0a0a0a 0%, #111 100%);
+}
+
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-text {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+
+.about-bio {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+.about-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(99, 102, 241, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid #6366f1;
+  transition: all 0.3s ease;
+}
+
+.highlight-item:hover {
+  background: rgba(99, 102, 241, 0.1);
+  transform: translateX(10px);
+}
+
+.highlight-icon {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.about-visual {
+  perspective: 1000px;
+}
+
+.code-window {
+  background: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  transform: rotateY(-5deg);
+  transition: transform 0.3s ease;
+}
+
+.code-window:hover {
+  transform: rotateY(0deg);
+}
+
+.window-header {
+  background: #2d2d2d;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.window-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.window-buttons span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.btn-close {
+  background: #ff5f56;
+}
+
+.btn-minimize {
+  background: #ffbd2e;
+}
+
+.btn-maximize {
+  background: #27c93f;
+}
+
+.window-title {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+}
+
+.window-content {
+  padding: 1.5rem;
+  overflow-x: auto;
+}
+
+.window-content pre {
+  color: #d4d4d4;
+  font-family: 'Fira Code', 'Consolas', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .code-window {
+    transform: none;
+  }
+}
+
