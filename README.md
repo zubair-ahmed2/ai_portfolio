@@ -4,7 +4,7 @@ Hey there! 👋 This is my personal portfolio website showcasing my work as an A
 
 ## About Me
 
-I am a dedicated Artificial Intelligence Engineer with 6 months of Industrial and Research Experience. My expertise spans various areas of AI and machine learning, where I have developed innovative solutions and efficient deployment pipelines. I specialize in:
+I am a dedicated Artificial Intelligence Engineer with 11 months of Industrial and Research Experience. My expertise spans various areas of AI and machine learning, where I have developed innovative solutions and efficient deployment pipelines. I specialize in:
 
 - **RAG Systems & Agentic AI**
 - **Computer Vision & Deep Learning**

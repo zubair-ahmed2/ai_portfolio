@@ -5,14 +5,14 @@ export const getPortfolioData = (): PortfolioData => {
   return {
     hero: {
       name: "Zubair Ahmed",
-      title: "AI Engineer & Computer Vision Specialist",
+      title: "Full Stack AI Engineer",
       tagline: "Dedicated AI Engineer with expertise in computer vision, machine learning, and intelligent systems development",
       avatar_url: ""
     },
     about: {
       bio: "I am a dedicated Artificial Intelligence Engineer with 6 months of Industrial and Research Experience. My expertise spans various areas of AI and machine learning, where I have developed innovative solutions and efficient deployment pipelines. I bring a blend of technical proficiency and creative problem-solving to every project. My objective is to secure a position where I can efficiently contribute my skills and abilities to the growth of the organization and build my professional career.",
       highlights: [
-        "6 months of industrial and research experience in AI/ML",
+        "11 months of industrial and research experience in AI/ML",
         "Published research paper: 'A Novel Deep Learning Framework for Contraband Items Recognition in Smart City' at ICSDI 2024",
         "Bachelor's in Computer Engineering with major in Artificial Intelligence and Embedded Systems",
         "Expertise in RAG Systems, No-Code/Code Automations, Agentic AI, and Computer Vision",
