@@ -1,4 +1,10 @@
 import type { PortfolioData } from '../types'
+import emailjs from '@emailjs/browser'
+
+// EmailJS configuration
+const EMAIL_SERVICE_ID = 'service_bwwagjz' // You'll need to replace this
+const EMAIL_TEMPLATE_ID = 'template_dfsbfrm' // You'll need to replace this
+const EMAIL_PUBLIC_KEY = 'CnAkzB7nL6AH0IG3p' // You'll need to replace this
 
 // Static portfolio data
 export const getPortfolioData = (): PortfolioData => {
@@ -10,7 +16,7 @@ export const getPortfolioData = (): PortfolioData => {
       avatar_url: ""
     },
     about: {
-      bio: "I am a dedicated Artificial Intelligence Engineer with 6 months of Industrial and Research Experience. My expertise spans various areas of AI and machine learning, where I have developed innovative solutions and efficient deployment pipelines. I bring a blend of technical proficiency and creative problem-solving to every project. My objective is to secure a position where I can efficiently contribute my skills and abilities to the growth of the organization and build my professional career.",
+      bio: "I am a dedicated Artificial Intelligence Engineer with 11 months of Industrial and Research Experience. My expertise spans various areas of AI and machine learning, where I have developed innovative solutions and efficient deployment pipelines. I bring a blend of technical proficiency and creative problem-solving to every project. My objective is to secure a position where I can efficiently contribute my skills and abilities to the growth of the organization and build my professional career.",
       highlights: [
         "11 months of industrial and research experience in AI/ML",
         "Published research paper: 'A Novel Deep Learning Framework for Contraband Items Recognition in Smart City' at ICSDI 2024",
@@ -182,13 +188,35 @@ export const sendContactMessage = async (data: {
   email: string
   message: string
 }) => {
-  // Simulate API call for contact form
-  console.log('Contact message received:', data)
+  try {
+    const response = await emailjs.send(
+      EMAIL_SERVICE_ID,
+      EMAIL_TEMPLATE_ID,
+      {
+        from_name: data.name,
+        from_email: data.email,
+        message: `
+From: ${data.name}
+Email: ${data.email}
 
-  // In a real application, you would integrate with email service or backend
-  return {
-    status: 'success',
-    message: 'Thank you for your message! I\'ll get back to you soon.'
+Message:
+${data.message}
+        `,
+      },
+      EMAIL_PUBLIC_KEY
+    )
+
+    if (response.status === 200) {
+      return {
+        status: 'success',
+        message: 'Thank you for your message! I\'ll get back to you soon.'
+      }
+    } else {
+      throw new Error('Failed to send message')
+    }
+  } catch (error) {
+    console.error('Error sending message:', error)
+    throw new Error('Failed to send message. Please try again later.')
   }
 }
 
