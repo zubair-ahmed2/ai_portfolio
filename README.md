@@ -1,54 +1,75 @@
-# My AI Engineer Portfolio
+# Zubair Ahmed - AI Engineer Portfolio
 
-Hey there! 👋 This is my personal portfolio website showcasing my work as an AI Engineer. I built this to demonstrate my skills in both frontend and backend development, with a focus on modern web technologies.
+Hey there! 👋 This is my personal portfolio website showcasing my work as an AI Engineer. I built this to demonstrate my skills in AI/ML development, computer vision, and modern web technologies.
+
+## About Me
+
+I am a dedicated Artificial Intelligence Engineer with 6 months of Industrial and Research Experience. My expertise spans various areas of AI and machine learning, where I have developed innovative solutions and efficient deployment pipelines. I specialize in:
+
+- **RAG Systems & Agentic AI**
+- **Computer Vision & Deep Learning**
+- **Voice AI & Multimodal Systems**
+- **Full-Stack AI Application Development**
 
 ## What I Built
 
-This portfolio is a full-stack application featuring:
+This portfolio is a modern, responsive web application featuring:
 
 - **Frontend**: React + TypeScript + Vite for lightning-fast development
-- **Backend**: FastAPI with Python for a robust API
 - **Design**: Modern dark/light theme with smooth animations
 - **Responsive**: Works perfectly on desktop, tablet, and mobile
+- **Static Data**: All portfolio information embedded directly in the frontend
 
-## Features
+## Key Projects
 
-✨ **Modern UI/UX** - Clean design with gradient accents and smooth animations  
-📱 **Fully Responsive** - Looks great on any device  
-🌙 **Dark/Light Mode** - Toggle between themes with persistent preference  
-⚡ **Fast Performance** - Built with Vite for optimal speed  
-🎨 **Smooth Animations** - Framer Motion for delightful interactions  
-🔌 **REST API** - FastAPI backend with auto-generated documentation  
-📝 **Type Safety** - Full TypeScript implementation  
-🚀 **Production Ready** - Optimized builds and deployment ready  
+🚀 **Multi-Tenant Document Management SaaS** - Enterprise platform with Azure AD integration
+🤖 **GPT-based Vehicle Management Chatbot** - AI assistant with voice and image analysis
+🎵 **AI Music Generation Pipeline** - Using Suno/Chirp and OpenAI for song synthesis
+🔍 **Deepfake Detection System** - Advanced computer vision for media authenticity
+🛣️ **Crack & Pothole Detection** - YOLOv8-based infrastructure monitoring
+
+## Education
+
+**Bachelor of Computer Engineering** (Sep 2020 - July 2024)
+- Bahria University Islamabad
+- Major in Artificial Intelligence and Embedded Systems
+
+## Publications
+
+📚 **"A Novel Deep Learning Framework for Contraband Items Recognition in Smart City"**
+- Published at INTERNATIONAL CONFERENCE ON SUSTAINABILITY: DEVELOPMENTS AND INNOVATIONS (ICSDI 2024)
+- Authors: Dr. Shehzad Khalid, Zubair Ahmed, Ayesha Noor, Ahmed Sedik, Waqar Asif
 
 ## Tech Stack
 
-### Frontend
+### AI & Machine Learning
+- **Frameworks**: TensorFlow, OpenCV, Scikit-Learn
+- **LLM Tools**: LangChain, LangGraph, OpenAI GPT, DeepSeek, Mistral
+- **Computer Vision**: YOLOv8, Deep Learning Models
+- **AI Agents**: RAG Systems, Voice AI, Multimodal Processing
+
+### Backend & DevOps
+- **APIs**: FastAPI, Flask
+- **Cloud**: AWS, Azure AD, Docker
+- **CI/CD**: GitLab, GitHub Actions
+
+### Frontend Development
 - React 18.2 with TypeScript
 - Vite for build tooling
 - Framer Motion for animations
-- Axios for API calls
 - React Icons for beautiful icons
-
-### Backend
-- FastAPI with Python
-- Pydantic for data validation
-- Uvicorn ASGI server
-- CORS enabled for frontend integration
 
 ## Getting Started
 
 ### Prerequisites
 - Node.js (v18+)
-- Python (v3.9+)
 
-### Installation
+### Installation & Running
 
 1. **Clone the repository**
    ```bash
    git clone <your-repo-url>
-   cd Portfolio
+   cd ai_portfolio
    ```
 
 2. **Install frontend dependencies**
@@ -57,104 +78,38 @@ This portfolio is a full-stack application featuring:
    npm install
    ```
 
-3. **Install backend dependencies**
+3. **Start the development server**
    ```bash
-   cd ../backend
-   pip install -r requirements.txt
+   npm run dev
    ```
 
-### Running the Application
-
-**Start the backend server:**
-```bash
-cd backend
-python -m uvicorn main:app --reload
-```
-
-**Start the frontend (in a new terminal):**
-```bash
-cd frontend
-npm run dev
-```
-
-Visit `http://localhost:3000` or `http://localhost:5173` to see the portfolio!
-
-## Customization
-
-### Updating Content
-Edit `backend/main.py` and modify the `get_portfolio_data()` function to update:
-- Personal information (name, title, bio)
-- Skills and technologies
-- Projects and experience
-- Contact information
-
-### Styling
-Modify CSS files in `frontend/src/components/` to customize:
-- Colors and gradients
-- Animations and transitions
-- Layout and spacing
-
-### Theme Customization
-The app supports both dark and light themes. Toggle using the sun/moon icon in the navigation.
-
-## Project Structure
-
-```
-Portfolio/
-├── frontend/                 # React application
-│   ├── src/
-│   │   ├── components/      # React components
-│   │   ├── contexts/        # Theme context
-│   │   ├── api/            # API client
-│   │   └── types/          # TypeScript types
-│   └── package.json
-├── backend/                 # FastAPI application
-│   ├── main.py             # API routes and data
-│   └── requirements.txt    # Python dependencies
-└── README.md
-```
-
-## API Endpoints
-
-- `GET /api/portfolio` - Returns complete portfolio data
-- `POST /api/contact` - Handles contact form submissions
-- `GET /health` - Health check endpoint
-- `GET /docs` - Interactive API documentation
+Visit `http://localhost:5173` to see the portfolio!
 
 ## Deployment
 
-### Frontend
-Build the production version:
+This is a static React application that can be deployed to any static hosting service:
+
+- **Vercel** (Recommended) - Deploy directly from GitHub
+- **Netlify** - Drag and drop the `frontend/dist` folder
+- **GitHub Pages** - Use GitHub Actions for automated deployment
+
+Build for production:
 ```bash
 cd frontend
 npm run build
 ```
 
-Deploy the `dist` folder to any static hosting service like Vercel, Netlify, or GitHub Pages.
-
-### Backend
-Deploy to platforms like Railway, Render, Heroku, or AWS.
-
-## What I Learned
-
-Building this portfolio taught me:
-- Modern React patterns with hooks and context
-- TypeScript for type-safe development
-- FastAPI for building robust APIs
-- CSS animations and responsive design
-- Component architecture and state management
-- API integration and error handling
-
 ## Contact
 
 Feel free to reach out if you have any questions or just want to chat about AI/ML!
 
-- **Email**: [your-email@example.com]
-- **GitHub**: [your-github-username]
-- **LinkedIn**: [your-linkedin-profile]
+- **Email**: zubairahmedqazi23@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/zubair-ahmed-0a21ba22a/
+- **Location**: Islamabad, Pakistan
+- **Phone**: +923083572974
 
 ---
 
-*Built with ❤️ and lots of coffee ☕*
+*Built with ❤️, AI, and lots of coffee ☕*
 
 *Last updated: January 2025*

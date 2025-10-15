@@ -5,72 +5,67 @@ export const getPortfolioData = (): PortfolioData => {
   return {
     hero: {
       name: "Zubair Ahmed",
-      title: "Full Stack AI Engineer & ML Specialist",
-      tagline: "Building intelligent systems that solve real-world problems with cutting-edge AI technology",
+      title: "AI Engineer & Computer Vision Specialist",
+      tagline: "Dedicated AI Engineer with expertise in computer vision, machine learning, and intelligent systems development",
       avatar_url: ""
     },
     about: {
-      bio: "Passionate AI Engineer with two year of experience in machine learning, deep learning, and natural language processing. I specialize in building scalable AI systems and deploying production-ready models. My work spans computer vision, NLP, and reinforcement learning, with a focus on creating practical solutions that drive business value.",
+      bio: "I am a dedicated Artificial Intelligence Engineer with 6 months of Industrial and Research Experience. My expertise spans various areas of AI and machine learning, where I have developed innovative solutions and efficient deployment pipelines. I bring a blend of technical proficiency and creative problem-solving to every project. My objective is to secure a position where I can efficiently contribute my skills and abilities to the growth of the organization and build my professional career.",
       highlights: [
-        "2 years of experience in AI/ML engineering",
-        "Published research in Conference on Sustainability (ICSDI'24)",
-        "Expert in PyTorch, TensorFlow, scikit-learn, LangChain, LangGraph, Hugging Face, OpenAI API, Keras, Docker, AWS SageMaker, MLflow, FastAPI, Flask, CI/CD Pipelines",
-        "Deployed 20+ production ML models serving millions of users",
-        "Developed and assisted teams in building end-to-end AI pipelines"
+        "6 months of industrial and research experience in AI/ML",
+        "Published research paper: 'A Novel Deep Learning Framework for Contraband Items Recognition in Smart City' at ICSDI 2024",
+        "Bachelor's in Computer Engineering with major in Artificial Intelligence and Embedded Systems",
+        "Expertise in RAG Systems, No-Code/Code Automations, Agentic AI, and Computer Vision",
+        "Skills in LangChain, LangGraph, TensorFlow, OpenCV, Scikit-Learn, FastAPI, and DevOps tools"
       ]
     },
     skills: {
       categories: [
         {
-          name: "Machine Learning & AI",
+          name: "AI Expertise",
           items: [
-            "Deep Learning",
-            "Neural Networks",
-            "Computer Vision",
-            "Natural Language Processing",
-            "Reinforcement Learning",
-            "Generative AI",
-            "Transfer Learning",
-            "Model Optimization"
+            "RAG Systems",
+            "No-Code/Code Automations and Workflows",
+            "Agentic AI",
+            "Stable Diffusion",
+            "LoRA Training and Inference",
+            "Voice AI Agent",
+            "Agent Orchestration"
           ]
         },
         {
-          name: "Frameworks & Libraries",
+          name: "AI Tools and Frameworks",
           items: [
-            "PyTorch",
-            "TensorFlow",
-            "scikit-learn",
             "LangChain",
-            "OpenAI API",
-            "Keras",
             "LangGraph",
-            "CrewAI"
+            "LLM (GPT, DeepSeek, Mistral, Grok)",
+            "TensorFlow",
+            "OpenCV",
+            "Scikit-Learn"
           ]
         },
         {
-          name: "Programming & Tools",
+          name: "Backend Stack",
           items: [
-            "Python",
-            "SQL",
-            "CUDA",
-            "Git",
-            "GitHub",
-            "GitLab",
-            "Linux",
-            "Cursor",
-            "VS Code"
+            "FastAPI",
+            "Flask"
           ]
         },
         {
-          name: "MLOps & Deployment",
+          name: "DevOps",
           items: [
             "Docker",
-            "AWS SageMaker",
-            "MLflow",
-            "FastAPI",
-            "Flask",
-            "Apache Airflow",
-            "CI/CD Pipelines"
+            "CI/CD Pipelines",
+            "AWS",
+            "GitLab",
+            "GitHub"
+          ]
+        },
+        {
+          name: "Operating Systems",
+          items: [
+            "Ubuntu",
+            "Windows"
           ]
         }
       ]
@@ -78,100 +73,105 @@ export const getPortfolioData = (): PortfolioData => {
     projects: [
       {
         id: 1,
-        title: "LLM-Powered AI Assistant",
-        description: "Developed an intelligent chatbot using GPT-4 and LangChain with custom retrieval-augmented generation (RAG) for domain-specific knowledge. Implemented vector databases and semantic search for accurate context retrieval. Achieved 92% user satisfaction rate.",
-        technologies: ["Python", "LangChain", "OpenAI API", "FastAPI", "PostgreSQL", "pgvector", "Docker"],
-        github_url: "https://github.com",
-        demo_url: "https://example.com"
+        title: "Multi-Tenant Document Management SaaS Platform",
+        description: "Developing a multi-tenant, enterprise-level SaaS platform for secure document management, enabling companies to upload and manage documents with strict data isolation. Integrating Azure Active Directory for authentication and role-based access control, and built automated ingestion pipelines from Google Drive, OneDrive, and SharePoint.",
+        technologies: ["FastAPI", "Azure AD", "Google Drive API", "OneDrive API", "SharePoint API", "Docker"],
+        github_url: "",
+        demo_url: ""
       },
       {
         id: 2,
-        title: "Real-time Object Detection System",
-        description: "Built a high-performance real-time object detection system using YOLOv8 deployed as a REST API. Optimized for edge deployment with 30+ FPS on standard hardware. Integrated with video streaming pipeline for surveillance applications.",
-        technologies: ["PyTorch", "YOLOv8", "OpenCV", "FastAPI", "Docker", "NVIDIA TensorRT"],
-        github_url: "https://github.com",
-        demo_url: "https://example.com"
+        title: "GPT-based Chatbot for Car Management Company",
+        description: "Developed GPT-based chatbot for a Car Management Company, offering ChatGPT-like capabilities tailored to vehicles, including maintenance support, sound and image analysis, vehicle number-based history reports, and real-time market valuation.",
+        technologies: ["OpenAI GPT", "FastAPI", "Python", "Voice AI", "Image Analysis"],
+        github_url: "",
+        demo_url: ""
       },
       {
         id: 3,
-        title: "Sentiment Analysis Pipeline",
-        description: "Created an end-to-end sentiment analysis pipeline for social media data with automated retraining and monitoring. Implemented BERT-based models with fine-tuning on custom datasets. Achieved 89% accuracy on multi-class sentiment classification.",
-        technologies: ["Transformers", "Hugging Face", "MLflow", "Apache Airflow", "AWS", "PostgreSQL"],
-        github_url: "https://github.com",
-        demo_url: "https://example.com"
+        title: "AI-Powered Music Generation Pipeline",
+        description: "Developed an AI-powered music generation pipeline using Suno/Chirp for song synthesis and OpenAI for lyric generation, replicating an AI music generation platform.",
+        technologies: ["Suno AI", "Chirp AI", "OpenAI API", "Python", "Music Generation"],
+        github_url: "",
+        demo_url: ""
       },
       {
         id: 4,
-        title: "Neural Style Transfer Application",
-        description: "Implemented an artistic style transfer application using deep convolutional neural networks. Optimized inference time by 60% using model quantization and pruning. Built an interactive web interface for real-time style application.",
-        technologies: ["PyTorch", "CNN", "Flask", "React", "Docker", "ONNX Runtime"],
-        github_url: "https://github.com",
-        demo_url: "https://example.com"
+        title: "AI-Powered Job Portal Cover Letter Generator",
+        description: "Building an AI-powered job portal module to generate personalized, data-driven cover letters based on user input.",
+        technologies: ["OpenAI API", "FastAPI", "React", "Natural Language Generation"],
+        github_url: "",
+        demo_url: ""
       },
       {
         id: 5,
-        title: "Predictive Maintenance ML Model",
-        description: "Developed a predictive maintenance system using time-series analysis and ensemble methods. Reduced equipment downtime by 35% through early anomaly detection. Deployed on AWS with automated retraining pipeline.",
-        technologies: ["scikit-learn", "XGBoost", "Pandas", "AWS SageMaker", "Lambda", "S3"],
-        github_url: "https://github.com",
-        demo_url: "https://example.com"
+        title: "Multimodal RAG-based Chatbot for E-commerce",
+        description: "Created a multimodal RAG-based chatbot for an e-commerce platform, integrating image and text data to handle customer queries in real time.",
+        technologies: ["RAG", "Vector Databases", "OpenAI", "FastAPI", "Image Processing"],
+        github_url: "",
+        demo_url: ""
       },
       {
         id: 6,
-        title: "Image Segmentation for Medical Imaging",
-        description: "Built a U-Net based image segmentation model for medical image analysis. Achieved state-of-the-art accuracy on CT scan segmentation. Collaborated with medical professionals to ensure clinical applicability.",
-        technologies: ["PyTorch", "U-Net", "Albumentations", "MONAI", "Flask", "PostgreSQL"],
-        github_url: "https://github.com",
-        demo_url: "https://example.com"
+        title: "Voice-Enabled Chatbot with Google Speech-to-Text",
+        description: "Designed and implemented a voice-enabled chatbot using Google Speech-to-Text and OpenAI, enabling seamless natural voice interactions.",
+        technologies: ["Google Speech-to-Text", "OpenAI", "FastAPI", "Voice AI", "Python"],
+        github_url: "",
+        demo_url: ""
+      },
+      {
+        id: 7,
+        title: "Deepfake Detection System",
+        description: "Developed a deepfake detection system by implementing research paper methodologies, fulfilling client requirements. Designed and implemented both backend and frontend using React for seamless integration.",
+        technologies: ["Deep Learning", "Computer Vision", "React", "FastAPI", "Python"],
+        github_url: "",
+        demo_url: ""
+      },
+      {
+        id: 8,
+        title: "Crack and Pothole Detection System",
+        description: "Developed a crack and pothole detection system by implementing YOLOv8m detection algorithm, fulfilling client requirements. Designed and implemented both backend and frontend using React for seamless integration.",
+        technologies: ["YOLOv8", "Computer Vision", "React", "FastAPI", "Python"],
+        github_url: "",
+        demo_url: ""
       }
     ],
     experience: [
       {
         id: 1,
-        title: "Senior AI Engineer",
-        company: "TechCorp AI Solutions",
-        duration: "2022 - Present",
-        description: "Leading AI initiatives and building production-ready ML systems for enterprise clients. Managing a team of 5 ML engineers and driving best practices in MLOps and model deployment.",
+        title: "AI Engineer",
+        company: "Codistan Ventures",
+        duration: "Jan 2025 - Present",
+        description: "Working as an AI Engineer at Codistan Ventures, developing various AI-powered solutions including multi-tenant SaaS platforms, chatbots, music generation systems, and computer vision applications.",
         achievements: [
-          "Improved model accuracy by 25% through advanced feature engineering and ensemble methods",
-          "Reduced inference latency by 40% through model optimization and quantization",
-          "Led the development of a computer vision system processing 1M+ images daily",
-          "Established MLOps practices reducing deployment time from weeks to hours",
-          "Mentored 10+ junior engineers in ML best practices"
+          "Developing a multi-tenant document management SaaS platform with Azure AD integration",
+          "Built GPT-based chatbot for car management with voice and image analysis capabilities",
+          "Created AI-powered music generation pipeline using Suno/Chirp and OpenAI",
+          "Developed multimodal RAG-based chatbot for e-commerce platforms",
+          "Implemented voice-enabled chatbot using Google Speech-to-Text and OpenAI",
+          "Built deepfake detection system using advanced computer vision techniques",
+          "Developed crack and pothole detection system using YOLOv8",
+          "Completed 10+ projects on Fiverr platform"
         ]
       },
       {
         id: 2,
-        title: "Machine Learning Engineer",
-        company: "AI Innovations Inc",
-        duration: "2020 - 2022",
-        description: "Developed and deployed machine learning models for various applications including NLP, computer vision, and recommendation systems. Collaborated with cross-functional teams to integrate ML solutions into products.",
+        title: "Freelance AI Developer",
+        company: "Fiverr",
+        duration: "Jan 2023 - May 2024",
+        description: "Worked as a freelance AI developer on Fiverr, delivering custom AI solutions including computer vision systems, deep learning models, and full-stack applications.",
         achievements: [
-          "Built and deployed 15+ production ML models serving 500K+ users",
-          "Implemented CI/CD pipelines for automated model testing and deployment",
-          "Reduced cloud infrastructure costs by 30% through optimization",
-          "Developed a recommendation system increasing user engagement by 45%",
-          "Created reusable ML components reducing development time by 50%"
-        ]
-      },
-      {
-        id: 3,
-        title: "AI Research Engineer",
-        company: "Research Labs",
-        duration: "2019 - 2020",
-        description: "Conducted research in deep learning and published papers on novel architectures for computer vision tasks. Implemented and tested cutting-edge algorithms from recent papers.",
-        achievements: [
-          "Published 3 papers in top-tier conferences (NeurIPS, ICML, CVPR)",
-          "Developed novel attention mechanisms improving model performance by 15%",
-          "Open-sourced research implementations with 1000+ GitHub stars",
-          "Collaborated with industry partners on transfer learning projects",
-          "Presented research findings at international conferences"
+          "Developed deepfake detection system implementing research paper methodologies",
+          "Built crack and pothole detection system using YOLOv8m",
+          "Created Python Tikinter desktop application for football data visualization",
+          "Delivered 10+ successful projects with high client satisfaction",
+          "Gained expertise in client requirement analysis and solution delivery"
         ]
       }
     ],
     contact: {
-      email: "zubairahmeddev02@gmail.com",
-      github: "https://github.com/zubair-ahmed2",
+      email: "zubairahmedqazi23@gmail.com",
+      github: "",
       linkedin: "https://www.linkedin.com/in/zubair-ahmed-0a21ba22a/",
     }
   }
